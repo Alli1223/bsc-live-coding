@@ -77,7 +77,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>..\..\Libraries\SDL2-2.0.4\include;..\..\Libraries\glew-2.0.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\Libraries\SDL2-2.0.4\lib\x64;..\..\Libraries\glew-2.0.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>..\..\Libraries\SDL2-2.0.4\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -87,7 +87,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>..\..\Libraries\SDL2-2.0.4\include;..\..\Libraries\glew-2.0.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\Libraries\SDL2-2.0.4\lib\x64;..\..\Libraries\glew-2.0.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>..\..\Libraries\SDL2-2.0.4\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -173,6 +173,10 @@
   <ItemGroup>
     <Image Include="01_FirstOpenGL.ico" />
     <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fragment.glsl" />
+    <None Include="vertex.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
